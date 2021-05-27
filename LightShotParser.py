@@ -8,13 +8,17 @@ if len(sys.argv) != 1: #проеврка заданы ли аргументы п
 else: #если аргументы не были заданы
     countPictures = int(input('Please, input count of pictures \n'))
     countThreads = int(input('\nPlease, input count of threads \n'))
+    if("false" in input("\nFilter NSFW? (Nudity etc.) (true/false, default true)\n")):
+        filter_nsfw = False
+    else:
+        filter_nsfw = True
 
 print('Starting...')
 downloadController = DC.DownloadController(countThreads, countPictures) #создание контроллера потоков загрузки
 downloadController.start() #запуск
 
 del countThreads, countPictures
-
+filter_nswf = True
 
 try:
     while True:
