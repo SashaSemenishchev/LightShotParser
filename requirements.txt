@@ -1,0 +1,3 @@
+httplib2==2-0.19.1
+pyparsing==2.4.7
+NudeNet==2.0.9
