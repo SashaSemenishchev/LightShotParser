@@ -2,8 +2,7 @@
 Парсинг фотографий с сайта https://app.prntscr.com (lightShot)
 
 ## Требуемые библиотеки:
-**httplib2**
-pip3 install httplib2
+pip3 install -r requirements.txt
 
 ## Запуск:
 **Рекомендуется запускать из консоли**
